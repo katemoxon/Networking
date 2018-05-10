@@ -46,17 +46,17 @@ private:
 
 	struct ConnectionInfo
 	{
-		bool					isAuthConnection;
-		unsigned int			uiConnectionID;
-		RakNet::SystemAddress	sysAddress;
+		bool isAuthConnection;
+		unsigned int uiConnectionID;
+		RakNet::SystemAddress sysAddress;
 	};
 
 	const unsigned short PORT = 5456;
 
-	RakNet::RakPeerInterface*							m_pPeerInterface;
+	RakNet::RakPeerInterface* m_pPeerInterface;
 
-	unsigned int										m_uiConnectionCounter;
-	std::unordered_map<unsigned int, ConnectionInfo>	m_connectedClients;
-	std::vector<GameObject>								m_gameObjects;
-	unsigned int										m_uiObjectCounter;
+	unsigned int m_uiConnectionCounter;
+	std::unordered_map<unsigned int, ConnectionInfo> m_connectedClients;
+	std::vector<GameObject> m_gameObjects;
+	unsigned int m_uiObjectCounter;
 };
